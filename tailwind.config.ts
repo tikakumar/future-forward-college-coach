@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+				'heading': ['Inter', 'ui-sans-serif', 'system-ui'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +56,26 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        college: {
+          blue: {
+            50: '#EBF8FF',
+            100: '#D1EEFC',
+            200: '#A7D8F0',
+            300: '#7CC1E4',
+            400: '#55A9D7',
+            500: '#1A365D', // Primary blue
+            600: '#0D4A7B',
+            700: '#063C6B',
+            800: '#042F58',
+            900: '#021F40',
+          },
+          teal: {
+            500: '#2C7A7B', // Secondary teal
+          },
+          coral: {
+            500: '#F56565', // Accent coral
+          },
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
