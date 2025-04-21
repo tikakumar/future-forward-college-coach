@@ -1,7 +1,9 @@
 ## How can I run this project?
 
-git clone [git url]
-npm install
+git clone https://github.com/tikakumar/future-forward-college-coach.git
+
+npm install 
+
 npm run dev
 
 ## What technologies are used for this project?
