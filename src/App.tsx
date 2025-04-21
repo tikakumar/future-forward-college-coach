@@ -7,6 +7,12 @@ import AppLayout from "./components/layout/AppLayout";
 import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
 import CollegeMatching from "./pages/CollegeMatching";
+import EssaySupport from "./pages/EssaySupport";
+import ApplicationReview from "./pages/ApplicationReview";
+import ActivitiesTracker from "./pages/ActivitiesTracker";
+import CollegeResearch from "./pages/CollegeResearch";
+import Analytics from "./pages/Analytics";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,13 +30,12 @@ const App = () => (
           <Route element={<AppLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/matching" element={<CollegeMatching />} />
-            {/* Placeholder routes for other pages */}
-            <Route path="/essay" element={<Dashboard />} />
-            <Route path="/review" element={<Dashboard />} />
-            <Route path="/activities" element={<Dashboard />} />
-            <Route path="/research" element={<Dashboard />} />
-            <Route path="/analytics" element={<Dashboard />} />
-            <Route path="/profile" element={<Dashboard />} />
+            <Route path="/essay" element={<EssaySupport />} />
+            <Route path="/review" element={<ApplicationReview />} />
+            <Route path="/activities" element={<ActivitiesTracker />} />
+            <Route path="/research" element={<CollegeResearch />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/profile" element={<Profile />} />
           </Route>
           
           <Route path="*" element={<NotFound />} />

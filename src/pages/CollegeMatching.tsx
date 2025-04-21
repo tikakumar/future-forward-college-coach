@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Search, SlidersHorizontal, HeartIcon, Heart } from "lucide-react";
 import { CollegeCard } from "@/components/ui/college-card";
@@ -23,6 +22,15 @@ const CollegeMatching = () => {
   
   // Mock college data
   const colleges = [
+    {
+      id: "7",
+      name: "Carnegie Mellon University",
+      location: "Pittsburgh, PA",
+      matchScore: 95,
+      acceptanceRate: 13.5,
+      undergraduateEnrollment: 7000,
+      topPrograms: ["Computer Science", "Engineering", "Business", "Robotics"],
+    },
     {
       id: "1",
       name: "Stanford University",
